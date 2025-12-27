@@ -13,6 +13,8 @@
 - 点击复制链接
 - 点击跳转到[字幕狗](https://player.sub-dog.top/)播放
 <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
+- 点击"multi"项。进入多清晰度播放
+- 手机端/PC端/Pad多端支持
 
 ### 在线字幕（sub-dog）
 
