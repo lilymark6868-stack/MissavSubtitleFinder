@@ -3,10 +3,16 @@
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-v5.3.3%2B-blue?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[missav](https://missav.ws/dm194/cn)字幕搜索脚本（油猴/Tampermonkey）。主要提供：画质/色彩增强、在线字幕（sub-dog）等能力。
+[missav](https://missav.ws/dm194/cn)字幕搜索脚本（油猴/Tampermonkey）。主要提供：在线字幕（sub-dog）、字幕评论、字幕校准等能力。
 ![preview](https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/3.png)
 
 ## 功能说明
+
+### M3U8链接嗅探
+- 自动嗅探m3u8播放链接
+- 点击复制链接
+- 点击跳转到[字幕狗](https://player.sub-dog.top/)播放
+<img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
 
 ### 在线字幕（sub-dog）
 
