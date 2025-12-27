@@ -37,6 +37,8 @@
 
 ## 使用安装
 
+### PC端安装
+
 1. 选择浏览器 `Chrome 130+` 或 `115Browser 35+`。
 
 2. 安装 [Tampermonkey v5.3.3+](https://www.tampermonkey.net/)。
@@ -52,6 +54,10 @@
 <img width="329" alt="image" src="https://github.com/user-attachments/assets/189ac578-0592-43bd-ab75-b62cbe6f5170" />
 
 👆上面一通操作后，还是无法使用的话请提交 [Issues](https://github.com/lilymark6868-stack/115SubtitleAssistant/issues)。
+
+### iphone端安装
+
+1.苹果商店搜索并安装Stay应用程序
 
 ## 常见问题
 
