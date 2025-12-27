@@ -3,48 +3,18 @@
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-v5.3.3%2B-blue?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[missav](https://missav.ws/dm194/cn)字幕搜索脚本（油猴/Tampermonkey）。主要提供：在线字幕（sub-dog）、字幕评论、字幕校准等能力。
+[missav](https://missav.ws/dm194/cn)字幕搜索脚本（油猴/Tampermonkey）。主要提供：自动嗅探m3u8视频链接、在线字幕（sub-dog）、多清晰度播放等能力。
 ![preview](https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/3.png)
 
 ## 功能说明
 
 ### M3U8链接嗅探
-- 自动嗅探m3u8播放链接
-- 点击复制链接
-- 点击跳转到[字幕狗](https://player.sub-dog.top/)播放
+- 🎨 自动嗅探m3u8播放链接
+- ⌨️ 点击复制链接
+- 👁 点击跳转到[字幕狗](https://player.sub-dog.top/)播放
 <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
-- 点击"multi"项。进入多清晰度播放
-- 手机端/PC端/Pad多端支持
-
-### 在线字幕（sub-dog）
-
-在播放器控制栏提供“字幕组(C)”入口（快捷键 `C`），支持：
-
-- 站内登录/注册（弹窗）
-- 字幕开关（显示/隐藏）
-- 多字幕变体切换，付费字幕会显示“👑”
-- 卡密充值：兑换后解锁更多付费字幕
-- 3万+字幕自动匹配：根据115网盘文件名中的番号自动匹配
-- 字幕来源展示：
-  - `sub-dog`：后端字幕服务
-  - `115网盘`：来自 115 网盘的字幕文件
-- 记住每个视频的字幕选择偏好（下次打开自动恢复）
-
-### 播放器增强
-
-- 🎨 `Ultra` 画质
-- 👁 视频缩略图
-- 🤖 在线外挂字幕
-- 🖼 画中画
-- ⌚ 播放列表展示
-- ⌨️ 快捷键
-- 🎨 视频调色
-
-### 网盘文件列表增强（首页/文件列表）
-
-- 视频封面预览增强（列表模式下）
-- 使用 `115master` 播放页打开
-- 使用 115 原生播放页打开
+- 🖼 点击"multi"项。进入多清晰度播放
+- 🤖 手机端/PC端/Pad多端支持
 
 ## 脚本使用介绍
 
