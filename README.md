@@ -3,7 +3,7 @@
 [![Tampermonkey](https://img.shields.io/badge/Tampermonkey-v5.3.3%2B-blue?logo=tampermonkey&logoColor=white)](https://www.tampermonkey.net/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-115 字幕助手脚本（油猴/Tampermonkey）。主要提供：画质/色彩增强、在线字幕（sub-dog）等能力。
+[missav](https://missav.ws/dm194/cn)字幕搜索脚本（油猴/Tampermonkey）。主要提供：画质/色彩增强、在线字幕（sub-dog）等能力。
 ![preview](https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/3.png)
 
 ## 功能说明
