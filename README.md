@@ -67,6 +67,6 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。独家提供�
 
 ## 友情链接
 
-[115SubtitleAssistant115 字幕助手脚本](https://github.com/lilymark6868-stack/115SubtitleAssistant)
+[115 字幕助手脚本115SubtitleAssistant](https://github.com/lilymark6868-stack/115SubtitleAssistant)
 
 
