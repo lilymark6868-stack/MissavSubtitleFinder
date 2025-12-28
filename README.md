@@ -65,4 +65,8 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。独家提供�
 ### 为什么没有匹配到字幕？
 - 字幕狗后端未更新该番号的字幕：前往[字幕狗主站](https://player.sub-dog.top/)，使用心愿单功能
 
+## 友情链接
+
+[115SubtitleAssistant](https://github.com/lilymark6868-stack/115SubtitleAssistant)
+
 
