@@ -37,13 +37,9 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。主要提供�
 
 4. 点击 [dog-catch-mobile.user.js](https://raw.githubusercontent.com/lilymark6868-stack/MissavSubtitleFinder/v2.0/dog-catch-mobile.user.js) 安装 【115Master】脚本。
 
-5. 在油猴面板勾选启动 【115Master】脚本并刷新 115 主页开始使用。
+5. 在油猴面板勾选启动 【m3u8视频侦测字幕搜索器】脚本并刷新[Missav](https://missav.ws/dm194/cn)主页开始使用。
 
-6. 安装完成后如果没有看到文件列表中有【master播放】的按钮，请检查有没有其他脚本导致冲突或重启浏览器。
-
-<img width="329" alt="image" src="https://github.com/user-attachments/assets/189ac578-0592-43bd-ab75-b62cbe6f5170" />
-
-👆上面一通操作后，还是无法使用的话请提交 [Issues](https://github.com/lilymark6868-stack/115SubtitleAssistant/issues)。
+👆上面一通操作后，还是无法使用的话请提交 [Issues](https://github.com/lilymark6868-stack/MissavSubtitleFinder/issues)。
 
 ### iphone端安装
 
