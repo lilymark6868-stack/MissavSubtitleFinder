@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         m3u8视频侦测下载器【自动嗅探】
-// @name:zh-CN   m3u8视频侦测下载器【自动嗅探】
-// @name:zh-TW   m3u8視頻偵測下載器【自動嗅探】
-// @name:en      M3U8 Video Detector and Downloader
+// @name         m3u8视频侦测字幕搜索器【自动嗅探】
+// @name:zh-CN   m3u8视频侦测字幕搜索器【自动嗅探】
+// @name:zh-TW   m3u8視頻偵測字幕搜索器【自動嗅探】
+// @name:en      M3U8 Video Subtitle Searcher
 // @version      1.5.0
-// @description  自动检测页面m3u8视频并进行完整下载。检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站。
-// @description:zh-CN  自动检测页面m3u8视频并进行完整下载。检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站。
-// @description:zh-TW  自動檢測頁面m3u8視頻並進行完整下載。檢測到m3u8鏈接後會自動出現在頁面右上角位置，點擊播放即可跳轉到字幕狗網站。
+// @description  自动检测Missav页面m3u8视频并提供跳转。检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站。
+// @description:zh-CN  自动检测Missav页面m3u8视频并提供跳转。检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站。
+// @description:zh-TW  自動檢測Missav頁面m3u8視頻並提供跳轉。檢測到m3u8鏈接後會自動出現在頁面右上角位置，點擊播放即可跳轉到字幕狗網站。
 // @description:en  Automatically detect the m3u8 video of the page and download it completely. Once detected the m3u8 link, it will appear in the upper right corner of the page. Click play to jump to the subtitle dog website.
 // @icon         https://tools.thatwind.com/favicon.png
 // @author       allFull
