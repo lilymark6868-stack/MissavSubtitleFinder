@@ -43,15 +43,17 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。独家提供�
 
 ### iphone端安装
 
-1.苹果商店搜索并安装Stay应用程序
-2.打开Stay,选择“从我的手机”导入事先放在iphone文件管理器中的脚本
+1. 苹果商店搜索并安装Stay应用程序
+
+2. 打开Stay,选择“从我的手机”导入事先放在iphone文件管理器中的脚本
 <div style="display:flex; gap:12px; align-items:flex-start;">
   <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/5.png" alt="5" style="width:24.5%; height:auto;">
   <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/6.png" alt="6" style="width:24.5%; height:auto;">
 </div>
 
-3.进入[Missav](https://missav.ws/dm194/cn)主页开始使用
-4.在视频播放页，有时需要先点击视频播放，才能检测到M3U8链接，若弹出广告页，请关闭广告页，回到视频播放页
+3. 进入[Missav](https://missav.ws/dm194/cn)主页开始使用
+
+4. 在视频播放页，有时需要先点击视频播放，才能检测到M3U8链接，若弹出广告页，请关闭广告页，回到视频播放页
 
 ## 常见问题
 
