@@ -11,7 +11,7 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。独家提供�
 ### M3U8链接嗅探
 - 🎨 自动嗅探m3u8播放链接
 - ⌨️ 点击复制链接
-- 👁 点击跳转到[字幕狗](https://player.sub-dog.top/)播放
+- 👁 点击跳转到[字幕狗](https://player.sub-dog.top/)播放，当前已有3万+字幕
 <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
 
 - 🖼 点击"multi"项。进入多清晰度播放
@@ -35,7 +35,7 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。独家提供�
 
 3. 开启 [浏览器扩展开发者模式](https://www.tampermonkey.net/faq.php#Q209)。
 
-4. 点击 [dog-catch-mobile.user.js](https://raw.githubusercontent.com/lilymark6868-stack/MissavSubtitleFinder/v2.0/dog-catch-mobile.user.js) 安装 【115Master】脚本。
+4. 点击 [dog-catch-mobile.user.js](https://raw.githubusercontent.com/lilymark6868-stack/MissavSubtitleFinder/v2.0/dog-catch-mobile.user.js) 安装 【MissavSubtitleFinder】脚本。
 
 5. 在油猴面板勾选启动 【m3u8视频侦测字幕搜索器】脚本并刷新[Missav](https://missav.ws/dm194/cn)主页开始使用。
 
@@ -59,11 +59,10 @@ MissavSubtitleFinder字幕搜索脚本（油猴/Tampermonkey）。独家提供�
 
 ### 为什么脚本没有生效？
 
-- 确认 Tampermonkey 中脚本已启用
+- 确认 Tampermonkey 或 Stay中脚本已启用
 - 尝试强制刷新页面（`Ctrl+F5`）
 
 ### 为什么没有匹配到字幕？
-- 检查文件名中是否含有番号
 - 字幕狗后端未更新该番号的字幕：前往[字幕狗主站](https://player.sub-dog.top/)，使用心愿单功能
 
 
