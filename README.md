@@ -35,7 +35,7 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
 
 3. 开启 [浏览器扩展开发者模式](https://www.tampermonkey.net/faq.php#Q209)。
 
-4. 点击 [dog-catch-mobile.user.js](https://raw.githubusercontent.com/lilymark6868-stack/MissavSubtitleFinder/v2.0/dog-catch-mobile.user.js) 安装 【MissavSubtitleFinder】脚本。
+4. 点击 [dog-catch-mobile.user.js](https://raw.githubusercontent.com/lilymark6868-stack/MissavSubtitleFinder/v3.0/dog-catch-mobile.user.js) 安装 【MissavSubtitleFinder】脚本。
 
 5. 在油猴面板勾选启动 【m3u8视频侦测字幕搜索器】脚本并刷新[Missav](https://missav.ws/dm194/cn)主页开始使用。
 
