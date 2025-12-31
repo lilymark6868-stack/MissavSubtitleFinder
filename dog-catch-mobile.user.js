@@ -1,15 +1,15 @@
 // ==UserScript==
-// @name         m3u8视频侦测字幕搜索器【自动嗅探】
-// @name:zh-CN   m3u8视频侦测字幕搜索器【自动嗅探】
-// @name:zh-TW   m3u8視頻偵測字幕搜索器【自動嗅探】
-// @name:en      M3U8 Video Subtitle Searcher
-// @version      1.5.0
+// @name         Missav字幕发现助手
+// @name:zh-CN   Missav字幕发现助手
+// @name:zh-TW   Missav字幕發現助手
+// @name:en      MissavSubtitleFinder
+// @version      1.6.0
 // @description  自动检测Missav页面m3u8视频并提供跳转。检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站。
 // @description:zh-CN  自动检测Missav页面m3u8视频并提供跳转。检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站。
 // @description:zh-TW  自動檢測Missav頁面m3u8視頻並提供跳轉。檢測到m3u8鏈接後會自動出現在頁面右上角位置，點擊播放即可跳轉到字幕狗網站。
-// @description:en  Automatically detect the m3u8 video of the page and download it completely. Once detected the m3u8 link, it will appear in the upper right corner of the page. Click play to jump to the subtitle dog website.
+// @description:en  Automatically detect the m3u8 video of the page and provide jump. Once detected the m3u8 link, it will appear in the upper right corner of the page. Click play to jump to the subtitle dog website.
 // @icon         https://tools.thatwind.com/favicon.png
-// @author       allFull
+// @author       lilymark6868-stack
 // @namespace    https://tools.thatwind.com/
 // @homepage     https://tools.thatwind.com/tool/m3u8downloader
 // @match        *://*/*
