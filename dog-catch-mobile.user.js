@@ -100,14 +100,22 @@
             ];
             
             for (const pattern of patterns) {
-                const match = url.match(pattern);
+                const match = url && url.match ? url.match(pattern) : null;
                 if (match) {
-                    const id = match[1];
-                    // 统一将字母转为大写，其它字符保持不变
-                    return id ? id.toUpperCase() : id;
+                    let id = match[1] || "";
+                    const strictCode = id.match(/([A-Za-z0-9]{2,8}-\d{2,5})/);
+                    if (strictCode && strictCode[1]) {
+                        id = strictCode[1];
+                    } else {
+                        const nCode = id.match(/(N\d{3,4})/i);
+                        if (nCode && nCode[1]) {
+                            id = nCode[1];
+                        }
+                    }
+                    return id ? id.toUpperCase() : null;
                 }
             }
-            
+
             return null;
         },
         download(details) {
@@ -757,7 +765,177 @@
  
         wrapper.appendChild(div);
     }
- 
+
+    const BACKEND_BASE_URL = "https://api.sub-dog.top";
+    const MISSAV_HOST_RE = /(^|\.)missav\.(ws|live)$/i;
+    const MAX_SUBTITLE_CHECK_CONCURRENCY = 5;
+    const subtitleCache = Object.create(null);
+    const subtitleQueue = [];
+    let subtitleActiveCount = 0;
+    const processedSubtitleCards = new WeakSet();
+    function checkSubtitleExists(vid) {
+        return new Promise(resolve => {
+            const base = BACKEND_BASE_URL.replace(/\/$/, "");
+            const url = base + "/api/subtitles/exists/" + encodeURIComponent(vid);
+            mgmapi.xmlHttpRequest({
+                method: "GET",
+                url,
+                timeout: 8000,
+                onload(r) {
+                    try {
+                        const data = JSON.parse(r.responseText || "{}");
+                        resolve(!!data.exists);
+                    } catch (e) {
+                        resolve(false);
+                    }
+                },
+                onerror() {
+                    resolve(false);
+                },
+                ontimeout() {
+                    resolve(false);
+                }
+            });
+        });
+    }
+    function processSubtitleQueue() {
+        if (subtitleActiveCount >= MAX_SUBTITLE_CHECK_CONCURRENCY) return;
+        const key = subtitleQueue.shift();
+        if (!key) return;
+        const entry = subtitleCache[key];
+        if (!entry || entry.status === "done") {
+            processSubtitleQueue();
+            return;
+        }
+        subtitleActiveCount++;
+        checkSubtitleExists(key).then(exists => {
+            entry.status = "done";
+            entry.exists = !!exists;
+            if (entry.exists && entry.cards && entry.cards.length) {
+                for (const card of entry.cards) {
+                    markCardHasSubtitle(card);
+                }
+            }
+            if (entry.cards) {
+                entry.cards.length = 0;
+            }
+        }).finally(() => {
+            subtitleActiveCount--;
+            if (subtitleActiveCount < 0) subtitleActiveCount = 0;
+            processSubtitleQueue();
+        });
+    }
+    function scheduleSubtitleCheck(vid, card) {
+        if (!vid || !card) return;
+        const key = String(vid).toUpperCase();
+        let entry = subtitleCache[key];
+        if (entry && entry.status === "done") {
+            if (entry.exists) {
+                markCardHasSubtitle(card);
+            }
+            return;
+        }
+        if (!entry) {
+            entry = { status: "pending", exists: false, cards: [] };
+            subtitleCache[key] = entry;
+            subtitleQueue.push(key);
+        }
+        if (!entry.cards) {
+            entry.cards = [];
+        }
+        entry.cards.push(card);
+        processSubtitleQueue();
+    }
+    function markCardHasSubtitle(card) {
+        if (!card) return;
+        if (card.__subdogSubtitleMarked) return;
+        card.__subdogSubtitleMarked = true;
+        const cover = card.querySelector(".relative.aspect-w-16.aspect-h-9") || card.querySelector(".relative");
+        if (!cover) return;
+        if (cover.querySelector("[data-subdog-subtitle-badge]")) return;
+        const span = document.createElement("span");
+        span.setAttribute("data-subdog-subtitle-badge", "1");
+        span.textContent = "有字幕";
+        const template = cover.querySelector("span.rounded-lg.text-xs");
+        if (template) {
+            span.className = template.className;
+            span.style.cssText = template.style.cssText || "";
+            span.classList.remove("bottom-1", "right-1");
+            span.classList.add("top-1", "left-1");
+        } else {
+            span.style.position = "absolute";
+            span.style.top = "4px";
+            span.style.left = "4px";
+            span.style.display = "inline-block";
+            span.style.padding = "2px 6px";
+            span.style.fontSize = "11px";
+            span.style.lineHeight = "1.2";
+            span.style.borderRadius = "4px";
+        }
+        span.style.color = "#ffffff";
+        span.style.backgroundColor = "transparent";
+        span.style.border = "none";
+        span.style.fontWeight = "700";
+        span.style.webkitTextStroke = "0.8px #16a34a";
+        span.style.pointerEvents = "none";
+        span.style.zIndex = "2";
+        cover.appendChild(span);
+    }
+    function extractVideoIdFromCard(card) {
+        if (!card) return null;
+        let vid = null;
+        const link = card.querySelector("a[href]");
+        if (link && link.href) {
+            try {
+                vid = mgmapi.extractVideoId(link.href);
+            } catch (e) {
+                vid = null;
+            }
+        }
+        if (!vid) {
+            const titleEl = card.querySelector(".my-2 a, .my-2.text-sm a, .text-sm.text-nord4 a");
+            if (titleEl) {
+                const text = titleEl.textContent || "";
+                const m = text.match(/([A-Za-z0-9]{2,8}-\d{2,5})/);
+                if (m) {
+                    vid = m[1].toUpperCase();
+                }
+            }
+        }
+        return vid;
+    }
+    function scanMissavListPage() {
+        const cards = document.querySelectorAll(".thumbnail");
+        for (const card of cards) {
+            if (processedSubtitleCards.has(card)) continue;
+            processedSubtitleCards.add(card);
+            const vid = extractVideoIdFromCard(card);
+            if (!vid) continue;
+            scheduleSubtitleCheck(vid, card);
+        }
+    }
+    function initMissavSubtitleBadge() {
+        if (!MISSAV_HOST_RE.test(location.hostname)) return;
+        function start() {
+            if (!document.body) {
+                setTimeout(start, 500);
+                return;
+            }
+            const initialCards = document.querySelectorAll(".thumbnail");
+            if (!initialCards || initialCards.length < 8) return;
+            scanMissavListPage();
+            const observer = new MutationObserver(() => {
+                scanMissavListPage();
+            });
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        }
+        start();
+    }
+    initMissavSubtitleBadge();
+
 })();
  
 (function () {
