@@ -17,7 +17,10 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
 - 🖼 点击"multi"项。进入多清晰度播放
 - 🤖 手机端/PC端/Pad多端支持
 - 👁【新增功能】自动识别视频是否含有字幕，并在视频右上角显示提示
-<img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/8.PNG" /><img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/11.PNG" />
+<div style="display:flex; gap:12px; align-items:flex-start;">
+  <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/8.PNG" alt="5" style="width:24.5%; height:auto;">
+  <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/11.PNG" alt="6" style="width:24.5%; height:auto;">
+</div>
 
 
 ## 脚本使用介绍
