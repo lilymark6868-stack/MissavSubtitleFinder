@@ -28,7 +28,7 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
 
 ## 脚本使用介绍
 
-### 1) 进入播放页
+### 1) 进入[Missav](https://missav.ws/dm194/cn)网站
 
 - 使用油猴安装此脚本
 - 刷新网页，检测到m3u8链接后会自动出现在页面右上角位置，点击播放即可跳转到字幕狗网站
