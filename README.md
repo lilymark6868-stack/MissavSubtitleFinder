@@ -13,6 +13,7 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
 <div style="display:flex; gap:12px; align-items:flex-start;">
     <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
 </div>
+
 - ⌨️ 点击复制链接
 - 👁 点击“播放(Play)”跳转到Subtitle Dog网站播放
 - 超3万+字幕
