@@ -10,19 +10,11 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
 
 ### M3U8链接嗅探
 - 🎨 自动嗅探m3u8播放链接
-<div style="display:flex; gap:12px; align-items:flex-start;">
-    <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
-</div>
-
 - 👁 点击“播放(Play)”跳转到Subtitle Dog网站播放
 - ⌨️ 超3万+字幕，并定时更新
 - 🖼 "multi"项，是多清晰度播放链接
 - 🤖 手机端/PC端/Pad多端支持
 - 👁【新增功能】自动识别视频是否含有字幕，并在视频左上角显示绿色提示文字“有字幕”
-<div style="display:flex; gap:12px; align-items:flex-start;">
-  <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/8.PNG" alt="5" style="width:24.5%; height:auto;">
-  <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/11.PNG" alt="6" style="width:24.5%; height:auto;">
-</div>
 
 
 ## 脚本使用介绍
@@ -31,7 +23,14 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
 
 - 使用油猴安装此脚本（安装方法见下文）
 - 刷新网页，视频左上角出现“有字幕”绿色文案，选择喜欢的视频，进入播放页
+<div style="display:flex; gap:12px; align-items:flex-start;">
+  <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/8.PNG" alt="5" style="width:24.5%; height:auto;">
+  <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/11.PNG" alt="6" style="width:24.5%; height:auto;">
+</div>
 - 进入播放页后，检测到m3u8链接后，页面右上角位置出现悬浮球，悬浮球可点击可拖动，悬浮球展开后，点击播放即可跳转到字幕狗网站
+<div style="display:flex; gap:12px; align-items:flex-start;">
+    <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
+</div>
 - 在视频播放页，有时不会出现悬浮球，需要先点击视频播放，弹出广告页，然后关闭广告页，回到视频播放页，悬浮球才出现
 - missav需要使用VPN登录，否则播放速度很慢，
 
