@@ -27,7 +27,7 @@ MissavSubtitleFinder字幕搜索脚本。专为[Missav](https://missav.ws/dm194/
   <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/8.PNG" alt="5" style="width:24.5%; height:auto;">
   <img src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/11.PNG" alt="6" style="width:24.5%; height:auto;">
 </div>
-- 进入播放页后，检测到m3u8链接后，页面右上角位置出现悬浮球，悬浮球可点击可拖动，悬浮球展开后，点击播放即可跳转到字幕狗网站
+- 进入播放页后，检测到m3u8链接后，页面右上角位置出现悬浮球，悬浮球可点击可拖动，悬浮球展开后，点击“播放(Play)”即可跳转到字幕狗网站
 <div style="display:flex; gap:12px; align-items:flex-start;">
     <img width="329" alt="image" src="https://github.com/lilymark6868-stack/MissavSubtitleFinder/blob/main/1.png" />
 </div>
